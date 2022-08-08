@@ -41,11 +41,11 @@ def random_guess():
 
                         else:
                             for i in range(0, 4):
-                                if str_input[i] in str1:
+                                
                                     if str1[i]==str_input[i]:
                                         count_rabbit +=1
 
-                                    else:
+                                    elif str1[i] in str_input:
                                         count_tortoise +=1
                             if count_rabbit<=0 and count_tortoise<=0:
                                 print("wrong guess")
